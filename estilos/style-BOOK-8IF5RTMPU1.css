@@ -16,7 +16,6 @@
     --destaque-inverso:#D96C6C;
     --fundo-card:#F272DD;
 }
-
 *{
   padding: 0px;
   margin: 0px;
@@ -24,21 +23,7 @@
 
 
 }
-p{
-  color: var(--texto);
-}
-body.escuro{
-   --fundo-principal:#0B0D0B;
-    --texto:#f9e7e7;
-    --texto-inverso:white;
-    --destaque:#D92B3A;
-    --destaque-inverso:#8C1C25;
-    --fundo-card:#F2916D;
-}
 header{
-  position: sticky;
-  top: 0;
-  z-index: 1;
  height: 120px;
   text-decoration: none;
   background-color: var(--fundo-card);
@@ -83,7 +68,7 @@ main{
   grid-template-columns: 1fr 80vw 1fr;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--fundo-principal);
-  
+  margin-top: 5px;
   gap: 20px;
 }
 h2{
@@ -209,33 +194,15 @@ article#video{
   border-left: 15px solid var(--destaque-inverso);
   cursor: pointer;
 }
-#formacao-container >div.curso > p.periodo{
-  font-size: 1em;
+#formacao-container>h3.instituicao{
   font-weight: bold;
   color: var(--texto);
-}
-#formacao-container >div.curso >  h3.instituicao{
-  font-size: 1.2em;
-  color: var(--fundo-card);
- 
 }
 
 
 @media screen and(min-width:768px) {
-  main{
-    grid-template-columns: auto 300px 1fr auto;
-  }
-  section#contato{
-    grid-column: 2/3;
-    height: fit-content;
-    position: sticky;
-    top: 60px;
-  }
-  section#conteudo{
-    grid-column: 3/4;
-  }
   #skill-container{
     grid-template-columns: 1fr 1fr;
   }
- 
+  
 }
