@@ -12,8 +12,8 @@
     --fundo-principal:#F2F2F2;
     --texto:#0B0A09;
     --texto-inverso:#F2F2F2;
-    --destaque:#A60A0A;
-    --destaque-inverso:#D96C6C;
+    --destaque:#F20505;
+    --destaque-inverso:#590202;
     --fundo-card:#F272DD;
 }
 
@@ -80,7 +80,7 @@ nav#menu a:hover{
 
 main{
   display: grid;
-  grid-template-columns: 1fr 80vw 1fr;
+  grid-template-columns: 1fr 90vw 1fr;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--fundo-principal);
   
@@ -219,23 +219,37 @@ article#video{
   color: var(--fundo-card);
  
 }
-
+footer{
+  height: 60px;
+  color: var(--texto);
+  background-color: var(--destaque-inverso);
+  text-align: center;
+  padding: 5px;
+}
+footer > a{
+   color: var(--fundo-card);
+   transition: 1s;
+}
+footer > a:hover{
+  color: var(--destaque);
+  cursor: pointer;
+}
 
 @media screen and(min-width:768px) {
-  main{
-    grid-template-columns: auto 300px 1fr auto;
+  #skill-container{
+    grid-template-columns: 1fr 1fr;
+  }
+   main{
+    grid-template-columns: auto  300px 1fr auto;
   }
   section#contato{
-    grid-column: 2/3;
-    height: fit-content;
-    position: sticky;
-    top: 60px;
+     grid-column: 2/3;
+     height: fit-content;
+     position: sticky;
+     top: 55px;
   }
   section#conteudo{
     grid-column: 3/4;
-  }
-  #skill-container{
-    grid-template-columns: 1fr 1fr;
   }
  
 }
