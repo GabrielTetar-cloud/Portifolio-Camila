@@ -46,7 +46,7 @@ header{
   padding: 10px;
   display: flex;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   
  justify-content: center;
  align-items: center;
@@ -56,7 +56,7 @@ header{
 header > h1 {
  
   padding: 10px;
-  font-size: 50px;
+  font-size: 3px;
 }
 nav#menu ul{
   margin-top: 15px;
@@ -69,7 +69,7 @@ nav#menu a {
   background-color: var(--destaque-inverso);
   color: var(--fundo-card);
   padding: 10px;
-  font-weight: 700;
+  font-weight: 70;
   border: 12px 14px;
   border-radius: 6px;
 }
